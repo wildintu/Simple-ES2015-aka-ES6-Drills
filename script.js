@@ -43,4 +43,4 @@ let parameter = whatever => {
 
 }
 
-parameter(myName);
+parameter(myName); 
