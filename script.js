@@ -37,7 +37,7 @@ let myName = 'Lexi';
 
 let parameter = whatever => {
     let string = [...whatever];
-    console.log(string);
+    //console.log(string);
     for (let i = 0; i < whatever.length; i++) {
         console.log(string[i]);
     }
