@@ -21,13 +21,26 @@ getFirstName();
 let getFirstNameConcise = name => console.log(`${singleName[0]}`);
 getFirstNameConcise();
 
-let dog = (x,y) => {
-    let benji = {
-        exponent: Math.pow(x,y),
-        product: x*y       
+let getStats = (x,y) => ({ 
+    exponent: Math.pow(x,y),
+    product: x*y       
+})
+
+let result = getStats(2,5);
+console.log(`${result.exponent} and ${result.product}`)
+
+let arr = ['Paul', 'Birmingham', 'Kimchi'];
+let favPlace = (name, location, favFood) => console.log(`My name is ${name} from ${location} and I love ${favFood}`);
+favPlace(...arr);
+
+let myName = 'Lexi';
+
+let parameter = whatever => {
+    let string = [...whatever];
+    for (let i = 0; i < whatever.length; i++) {
+        console.log(string[i]);
     }
-    return benji;
+
 }
 
-woof = dog(2,5);
-console.log(`${woof.exponent} and ${woof.product}`)
+parameter(myName);
