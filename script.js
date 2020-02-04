@@ -26,8 +26,8 @@ let getStats = (x,y) => ({
     product: x*y       
 })
 
-let result = getStats(2,5);
-console.log(`${result.exponent} and ${result.product}`)
+let {exponent, product} = getStats(2,5);
+console.log(`${exponent} and ${product}`)
 
 let arr = ['Paul', 'Birmingham', 'Kimchi'];
 let favPlace = (name, location, favFood) => console.log(`My name is ${name} from ${location} and I love ${favFood}`);
@@ -37,6 +37,7 @@ let myName = 'Lexi';
 
 let parameter = whatever => {
     let string = [...whatever];
+    console.log(string);
     for (let i = 0; i < whatever.length; i++) {
         console.log(string[i]);
     }
