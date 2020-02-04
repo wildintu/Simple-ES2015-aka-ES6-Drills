@@ -8,18 +8,13 @@ favMovie();
 favMovie('The Room', 'world');
 favMovie('','');
 
-let name = 'first last';
-
-let singleName = name.split(' ');
-//console.log(singleName[0]);
-
-let getFirstName = function name() {
-    console.log(`${singleName[0]}`);
+let getFirstName = function (name) {
+    console.log(`${name.split(' ', 1)}`);
 };
-getFirstName();
+getFirstName('Lexi Kwak');
 
-let getFirstNameConcise = name => console.log(`${singleName[0]}`);
-getFirstNameConcise();
+let getFirstNameConcise = name => console.log(`${name.split(' ', 1)}`);
+getFirstNameConcise('Lexi Kwak');
 
 let getStats = (x,y) => ({ 
     exponent: Math.pow(x,y),
