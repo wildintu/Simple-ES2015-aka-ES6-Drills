@@ -33,10 +33,11 @@ let myName = 'Lexi';
 let parameter = whatever => {
     let string = [...whatever];
     //console.log(string);
-    for (let i = 0; i < whatever.length; i++) {
+    for (let i = 0; i < string.length; i++) {
         console.log(string[i]);
     }
 
 }
 
-parameter(myName); 
+parameter(myName);
+parameter('Somebody please call 911!')
