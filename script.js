@@ -17,7 +17,7 @@ let getFirstNameConcise = name => console.log(`${name.split(' ', 1)}`);
 getFirstNameConcise('Lexi Kwak');
 
 let getStats = (x,y) => ({ 
-    exponent: Math.pow(x,y),
+    exponent: x**y,
     product: x*y       
 })
 
